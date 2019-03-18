@@ -37,7 +37,7 @@ class SudokuSolver:
                 yield [
                     element
                     for row in sudoku[3 * i: 3 * i + 3]
-                    for element in row[3 * i: 3 * i + 3]]
+                    for element in row[3 * j: 3 * j + 3]]
 
     @staticmethod
     def _filter(ls):
