@@ -178,9 +178,3 @@ class SudokuSolver:
             sudoku = copy.copy(sudoku)
         sudoku = self._tolists(sudoku)
         return SudokuSolver._solve(sudoku)
-
-
-if __name__ == '__main__':
-
-    solver = SudokuSolver()
-    solved = solver.solve(sudoku)
